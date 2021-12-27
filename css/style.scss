@@ -1,0 +1,167 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+p {
+  font-family: "Overpass", sans-serif;
+  line-height: 170%;
+}
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+header {
+  background-color: hsl(356, 100%, 66%);
+  position: fixed;
+  padding: 3rem 0;
+  width: 100%;
+
+  img {
+    height: 3rem;
+  }
+  a {
+    color: rgb(255, 255, 255);
+  }
+  nav,
+  .row,
+  ul,
+  .login,
+  .company {
+    display: flex;
+    align-items: center;
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+  .login {
+    gap: 3rem;
+  }
+
+  ul {
+    gap: 2rem;
+  }
+}
+.section-hero {
+  background-color: hsl(356, 100%, 66%);
+  height: 35rem;
+  color: white;
+  border-radius: 0 0 0 6rem;
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 14rem 0;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .buttons-hero {
+    display: flex;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
+}
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.6rem;
+  font-weight: 600;
+  &.--startFree,
+  &.--signUp {
+    background-color: white;
+    border: 1px solid transparent;
+    color: hsl(356, 100%, 66%);
+  }
+  &.--learnMore {
+    border: 1px solid white;
+    color: white;
+  }
+}
+.section-introduction {
+  padding: 10rem 0;
+  h2 {
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    height: 50rem;
+  }
+  h3:last-of-type {
+    margin-top: 8rem;
+  }
+  .text {
+    margin-top: 10rem;
+    max-width: 52.5rem;
+  }
+  p {
+    margin-top: 3rem;
+  }
+  .photo {
+    background-image: url("/img/illustration-editor-desktop.svg");
+    background-size: cover;
+    width: 70rem;
+    background-position-x: 20rem;
+    background-repeat: no-repeat;
+  }
+}
+.section-infrastructure {
+  color: white;
+  h2 {
+    font-size: 3.4rem;
+  }
+  .row {
+    height: 50rem;
+    display: flex;
+    gap: 10rem;
+    border-radius: 0 8rem 0 8rem;
+    background-color: rgb(48, 44, 90);
+  }
+  .photo {
+    background-image: url("/img/illustration-phones.svg");
+    background-size: cover;
+    width: 60rem;
+    background-repeat: no-repeat;
+  }
+  .text {
+    gap: 3rem;
+    display: flex;
+    max-width: 50rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

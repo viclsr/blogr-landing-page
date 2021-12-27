@@ -1,0 +1,225 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+p {
+  font-family: "Overpass", sans-serif;
+  line-height: 170%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+header {
+  background-color: #ff525d;
+  position: fixed;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+header img {
+  height: 3rem;
+}
+
+header a {
+  color: white;
+}
+
+header nav,
+header .row,
+header ul,
+header .login,
+header .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .login {
+  gap: 3rem;
+}
+
+header ul {
+  gap: 2rem;
+}
+
+.section-hero {
+  background-color: #ff525d;
+  height: 35rem;
+  color: white;
+  border-radius: 0 0 0 6rem;
+}
+
+.section-hero .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  padding: 14rem 0;
+}
+
+.section-hero h1 {
+  font-size: 4rem;
+}
+
+.section-hero .buttons-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 1.6rem;
+  font-weight: 600;
+}
+
+.btn.--startFree, .btn.--signUp {
+  background-color: white;
+  border: 1px solid transparent;
+  color: #ff525d;
+}
+
+.btn.--learnMore {
+  border: 1px solid white;
+  color: white;
+}
+
+.section-introduction {
+  padding: 10rem 0;
+}
+
+.section-introduction h2 {
+  text-align: center;
+}
+
+.section-introduction .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50rem;
+}
+
+.section-introduction h3:last-of-type {
+  margin-top: 8rem;
+}
+
+.section-introduction .text {
+  margin-top: 10rem;
+  max-width: 52.5rem;
+}
+
+.section-introduction p {
+  margin-top: 3rem;
+}
+
+.section-introduction .photo {
+  background-image: url("/img/illustration-editor-desktop.svg");
+  background-size: cover;
+  width: 70rem;
+  background-position-x: 20rem;
+  background-repeat: no-repeat;
+}
+
+.section-infrastructure {
+  color: white;
+}
+
+.section-infrastructure h2 {
+  font-size: 3.4rem;
+}
+
+.section-infrastructure .row {
+  height: 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10rem;
+  border-radius: 0 8rem 0 8rem;
+  background-color: #302c5a;
+}
+
+.section-infrastructure .photo {
+  background-image: url("/img/illustration-phones.svg");
+  background-size: cover;
+  width: 60rem;
+  background-repeat: no-repeat;
+}
+
+.section-infrastructure .text {
+  gap: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
