@@ -6,6 +6,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
 }
 ul {
   list-style-type: none;
@@ -30,12 +31,9 @@ p {
 p {
   font-family: "Overpass", sans-serif;
   line-height: 170%;
+  font-weight: 400;
 }
-h1,
-h2,
-h3 {
-  font-family: "Ubuntu", sans-serif;
-}
+
 h2 {
   font-size: 3.2rem;
   font-weight: 500;
@@ -112,14 +110,13 @@ header {
     color: white;
   }
 }
-.section-introduction {
+.section-details {
   padding: 10rem 0;
   h2 {
     text-align: center;
   }
   .row {
     display: flex;
-    height: 50rem;
   }
   h3:last-of-type {
     margin-top: 8rem;
@@ -132,11 +129,18 @@ header {
     margin-top: 3rem;
   }
   .photo {
-    background-image: url("/img/illustration-editor-desktop.svg");
+    max-height: 60rem;
     background-size: cover;
-    width: 70rem;
-    background-position-x: 20rem;
     background-repeat: no-repeat;
+    &.--first {
+      width: 60rem;
+      background-position-x: 20rem;
+      background-image: url("/img/illustration-editor-desktop.svg");
+    }
+    &.--last {
+      background-image: url("/img/illustration-laptop-desktop.svg");
+      width: 60rem;
+    }
   }
 }
 .section-infrastructure {
@@ -163,5 +167,38 @@ header {
     max-width: 50rem;
     flex-direction: column;
     justify-content: center;
+  }
+}
+footer {
+  border-radius: 0 8rem 0 0;
+
+  background-color: rgb(48, 44, 90);
+  padding: 5rem 0;
+  img {
+    max-height: 4rem;
+  }
+  .row,
+  ul {
+    display: flex;
+  }
+  nav {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+  }
+  ul {
+    padding: unset;
+    margin: unset;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  li {
+    a {
+      color: white;
+      font-size: 1.6rem;
+    }
+  }
+  li:first-of-type {
+    margin-bottom: 3rem;
   }
 }

@@ -8,6 +8,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
 }
 
 ul {
@@ -36,12 +37,7 @@ p {
 p {
   font-family: "Overpass", sans-serif;
   line-height: 170%;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
 }
 
 h2 {
@@ -147,40 +143,48 @@ header ul {
   color: white;
 }
 
-.section-introduction {
+.section-details {
   padding: 10rem 0;
 }
 
-.section-introduction h2 {
+.section-details h2 {
   text-align: center;
 }
 
-.section-introduction .row {
+.section-details .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50rem;
 }
 
-.section-introduction h3:last-of-type {
+.section-details h3:last-of-type {
   margin-top: 8rem;
 }
 
-.section-introduction .text {
+.section-details .text {
   margin-top: 10rem;
   max-width: 52.5rem;
 }
 
-.section-introduction p {
+.section-details p {
   margin-top: 3rem;
 }
 
-.section-introduction .photo {
-  background-image: url("/img/illustration-editor-desktop.svg");
+.section-details .photo {
+  max-height: 60rem;
   background-size: cover;
-  width: 70rem;
-  background-position-x: 20rem;
   background-repeat: no-repeat;
+}
+
+.section-details .photo.--first {
+  width: 60rem;
+  background-position-x: 20rem;
+  background-image: url("/img/illustration-editor-desktop.svg");
+}
+
+.section-details .photo.--last {
+  background-image: url("/img/illustration-laptop-desktop.svg");
+  width: 60rem;
 }
 
 .section-infrastructure {
@@ -221,5 +225,50 @@ header ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+footer {
+  border-radius: 0 8rem 0 0;
+  background-color: #302c5a;
+  padding: 5rem 0;
+}
+
+footer img {
+  max-height: 4rem;
+}
+
+footer .row,
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul {
+  padding: unset;
+  margin: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+footer li a {
+  color: white;
+  font-size: 1.6rem;
+}
+
+footer li:first-of-type {
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
